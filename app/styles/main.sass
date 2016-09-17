@@ -2,8 +2,10 @@ $bg-red: #ee1c27
 $bg-lightred: #ff002e
 $bg-grey: #e6e6e6
 $bg-violet: #2b003a
+$bg-lightviolet: #530a6c
 $bg-orange: #f46425
 $bg-green: #07692c
+$bg-deepgreen: #08391b
 $bg-blue: #0c0549
 
 *
@@ -12,82 +14,176 @@ $bg-blue: #0c0549
 
 body
   font-family: 'Open Sans', sans-serif
-  background: $bg-red
+  background: $bg-grey
   color: $bg-grey
-  background-image: url(../images/main-texture.png)
+  background-attachment: fixed
 
 //   transition: background 0.3s ease-in-out
 // &:hover
 //   background: $bg-grey
 //   color: $bg-red
 
-
-.img-responsive
-  max-width: 100%
-
-.app
+.bootstrapper
   position: absolute
-  margin: auto
-  height: 60%
-  width: 80%
   top: 0
   bottom: 0
   right: 0
   left: 0
+  width: 100%
+  height: 100%
+  display: flex
+
+
+.img-responsive
+  max-width: 100%
+
+// .app
+//   margin: auto
+//   height: 60%
+//   width: 80%
+//   display: flex
+//   justify-content: center
+//   align-items: stretch
+//   .logo-container
+//     display: flex
+//     align-items: center
+//     flex: 1 1 auto
+//     margin-right: 10px
+//     //background: $bg-violet
+//   .content-container
+//     perspective: 300px
+//     display: flex
+//     flex-direction: column
+//     background: linear-gradient(to left top, lightgreen , lightgreen)
+//     // border-radius: 4px
+//     justify-content: space-between
+//     align-items: center
+//     flex: 1 1 auto
+//     // background: $bg-grey
+//     padding: 20px 20px 5px 20px
+//     box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.4)
+//     animation: fly 3s ease-in-out infinite
+//     .content
+//       flex: 1 1 auto
+//       color: $bg-grey
+//       overflow: auto
+//       h1
+//         padding: 20px
+//         font-family: 'Lobster Two', 'Open Sans', sans-serif
+//         font-size: 36px
+//         text-shadow: 5px 0px 6px rgba(0,0,0,0.1)
+//         transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out
+//         &:hover
+//           text-shadow: 15px 5px 10px rgba(0,0,0,0.2)
+//           color: $bg-lightred
+//       p
+//         padding: 30px
+//         font-size: 22px
+//         text-transform: capitalize
+//         font-family: 'Open Sans', sans-serif
+//         width: 90%
+//     .nav
+//       margin: 10px 0px
+//       flex: 1 1 auto
+//       display: flex
+//       flex-direction: column
+//       align-items: center
+
+.app
+  margin: auto
+  width: 60%
+  height: 68%
+  min-width: 300px
+  min-height: 400px
   display: flex
   justify-content: center
-  align-items: stretch
+  align-items: center
+  @media screen and (max-width: 800px)
+    flex-direction: column
   .logo-container
     display: flex
+    flex-direction: column
     align-items: center
     flex: 1 1 auto
     margin-right: 10px
-    //background: $bg-violet
+    @media screen and (max-width: 800px)
+      padding-top: 100px
+      max-width: 60%
+    //background: $bg-violetn
   .content-container
-    perspective: 300px
+    // background: lightgreen
+    align-self: stretch
     display: flex
-    flex-wrap: no-wrap
-    flex-direction: column
-    // border-radius: 4px
-    justify-content: space-between
-    align-items: center
+    justify-content: center
     flex: 1 1 auto
-    background: $bg-grey
-    padding: 20px 20px 5px 20px
-    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.4)
-    animation: fly 3s ease-in-out infinite
-    .content
-      flex: 1 1 auto
-      color: $bg-red
-      overflow: auto
-      h1
-        padding: 20px
-        font-family: 'Lobster Two', 'Open Sans', sans-serif
-        font-size: 36px
-        text-shadow: 5px 0px 6px rgba(0,0,0,0.1)
-        transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out
-        &:hover
-          text-shadow: 15px 5px 10px rgba(0,0,0,0.2)
-          color: $bg-lightred
-      p
-        padding: 30px
-        font-size: 22px
-        text-transform: capitalize
-        font-family: 'Open Sans', sans-serif
-        width: 90%
-    .nav
-      margin: 10px 0px
-      flex: 1 1 auto
+    .left
+      margin-right: 5px
+      width: 15%
+
+    .mid
       display: flex
-      align-items: flex-end
-      width: 100%
-      justify-content: flex-start
+      flex-direction: column
+      margin: 10px
+      justify-content: space-between
+      .title
+        margin: 5px
+        flex: 1 1 auto
+        text-align: center
+        font-family: 'Lobster Two', 'Open Sans', sans-serif
+        font-size: 26px
+        color: $bg-lightred
+        @media screen and (max-width: 800px)
+          font-size: 18px
+      .text
+        //background: $bg-red
+        padding: 20px
+        margin: 35px 0px
+        flex: 3 3 auto
+        height: 100%
+
+      .nav
+        flex: 1 1 auto
+        // background: lightgreen
+        display: flex
+        flex-direction: column
+        .more-content-button
+        .menu
+          align-self: center
+          justify-content: space-between
+          display: flex
 
 
+.fly
+  border: none
+  margin-bottom: 5px
+  letter-spacing: 2px
+  color: $bg-grey
+  padding: 10px 30px
+  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.4)
+  transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out
+  &:hover
+    box-shadow: 3px 30px 20px -10px rgba(0,0,0,0.3)
+    transform: translateY(-10px)
+    color: white
 
-//button
+.screen-glass
+  border: none
+  padding: 0px 15px
+  margin: 0px 8px
+  font-size: 12px
+  text-align: center
+  color: $bg-lightred
+  letter-spacing: 1px
+  background: white
+  box-shadow: 5px 4px 0px 4px rgba(0,0,0,0.2)
+  transition: box-shadow 0.3s ease-in-out
+  &:hover
+    box-shadow: -3px 6px 0px 4px rgba(0,0,0,0.3)
+
+//buttons
 .more-content-button
   border: none
+  margin-bottom: 5px
   text-transform: uppercase
   letter-spacing: 2px
   background: $bg-red
@@ -103,9 +199,18 @@ body
 
 .nav-button
   border: none
-  margin-right: 10px
-  font-size: 18px
-  letter-spacing: 3px
+  padding: 0px 15px
+  margin: 0px 8px
+  font-size: 12px
+  //text-transform: uppercase
+  color: $bg-lightred
+  letter-spacing: 1px
+  box-shadow: 3px 2px 0px 2px rgba(0,0,0,0.2)
+  transition: box-shadow 0.3s ease-in-out
+  &:hover
+    box-shadow: -1px 4px 0px 2px rgba(0,0,0,0.3)
+
+
 
 
 
