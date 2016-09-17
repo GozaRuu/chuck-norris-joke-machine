@@ -1,5 +1,8 @@
 node_modules
 dist
+assets
 .tmp
 bower_components
 test/bower_components
+.editiorconfig
+.yo-rc
