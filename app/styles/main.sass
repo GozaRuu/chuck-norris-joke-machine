@@ -4,7 +4,7 @@ $bg-grey: #e6e6e6
 $bg-violet: #2b003a
 $bg-lightviolet: #530a6c
 $bg-orange: #f46425
-$bg-green: #07692c
+$bg-green: #00887c
 $bg-deepgreen: #08391b
 $bg-blue: #0c0549
 
@@ -61,9 +61,7 @@ body
     @media screen and (max-width: 800px)
       padding-top: 100px
       max-width: 60%
-    //background: $bg-violetn
   .content-container
-    // background: lightgreen
     align-self: stretch
     display: flex
     justify-content: center
@@ -73,22 +71,23 @@ body
       flex-direction: column
       margin: 10px
       justify-content: space-between
-      transition: width 0.3s ease-in-out , height 0.3s ease-in-out
       .title
         margin: 5px
         flex: 1 1 auto
         text-align: center
         font-family: 'Lobster Two', 'Open Sans', sans-serif
         font-size: 26px
+        transition: color 0.6s ease-in-out
         color: $bg-lightred
         @media screen and (max-width: 800px)
           font-size: 18px
+
       .text
-        //background: $bg-red
         padding: 20px
         margin: 35px 0px
         flex: 3 3 auto
         height: 100%
+        transition: color 0.6s ease-in-out
 
       .nav
         flex: 1 1 auto
@@ -123,7 +122,7 @@ body
   letter-spacing: 1px
   background: white
   box-shadow: 5px 4px 0px 4px rgba(0,0,0,0.2)
-  transition: box-shadow 0.3s ease-in-out
+  transition: box-shadow 0.3s ease-in-out, color 0.6s ease-in-out
   &:hover
     box-shadow: -3px 6px 0px 4px rgba(0,0,0,0.3)
 
@@ -137,7 +136,7 @@ body
   color: $bg-grey
   padding: 10px 30px
   box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.4)
-  transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out
+  transition: box-shadow 0.3s ease-in-out, background 0.6s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out
   &:hover
     box-shadow: 3px 30px 20px -10px rgba(0,0,0,0.3)
     transform: translateY(-10px)
@@ -154,7 +153,7 @@ body
   color: $bg-lightred
   letter-spacing: 1px
   box-shadow: 3px 2px 0px 2px rgba(0,0,0,0.2)
-  transition: box-shadow 0.3s ease-in-out
+  transition: box-shadow 0.3s ease-in-out, color 0.6s ease-in-out
   &:hover
     box-shadow: -1px 4px 0px 2px rgba(0,0,0,0.3)
 
@@ -179,9 +178,3 @@ body
     transform: translateY(0px)
     background: $bg-grey
     box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.4)
-
-.color-shifter
-  transition: color 0.6s ease-in-out
-
-.background-color-shifter
-  transition: background 0.6s ease-in-out
