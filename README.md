@@ -6,7 +6,7 @@ You can set up a copy of the development environment using gulp.
 1. Install [NPM](https://nodejs.org/en/download/).
 2. Install all project dependencies : 
 ```
-$ cd /to/cloned/directory
+$ cd /to/directory
 $ npm install
 $ bower install
 ```
