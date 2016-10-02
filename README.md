@@ -1,8 +1,8 @@
 # chuck-norris-joke-machine
 Responsive Web App that bring and displays an infinity of Chuck Norris Jokes :D
 
-##Technologie
-This web app uses **SASS** for style and animations and handling responsivity and **JQuery** mainly for AJAX services.
+##Technology
+This web app uses **SASS** for style, animations and handling responsivity and **JQuery** mainly for AJAX services.
 
 ##Develpment
 You can set up a copy of the development environment using gulp.
