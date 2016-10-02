@@ -5,4 +5,5 @@ assets
 bower_components
 test/bower_components
 .editiorconfig
-.yo-rc
+.yo-rc.json
+.gitattributes
