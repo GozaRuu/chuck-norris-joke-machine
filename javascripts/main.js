@@ -7,6 +7,13 @@ $.ready(function () {
   console.log("ready!");
 });
 
+$.ajax({
+    url: "https://api.chucknorris.io/jokes/random"
+  }).done(function (data) {
+    $('.mid .text').text(data.value);
+  })
+  });
+
 $('#about-btn').click(function () {
   $('#about').removeClass('hidden');
   $('#contact').addClass('hidden');
