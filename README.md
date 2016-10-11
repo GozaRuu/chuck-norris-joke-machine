@@ -1,5 +1,6 @@
 # chuck-norris-joke-machine
-Responsive Web App that bring and displays an infinity of Chuck Norris Jokes :D
+Responsive Web App that bring and displays an infinity of Chuck Norris Jokes :D</br>
+This project is live at: [gozaruu.github.io](https://gozaruu.github.io/chuck-norris-joke-machine/), Check it out.
 
 ##Technology
 This web app uses **SASS** for style, animations and handling responsivity and **JQuery** mainly for AJAX services.
