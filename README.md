@@ -2,10 +2,10 @@
 Responsive Web App that bring and displays an infinity of Chuck Norris Jokes :D</br>
 This project is **live** at: [gozaruu.github.io](https://gozaruu.github.io/chuck-norris-joke-machine/). Check it out !!
 
-##Technology
+# Technology
 This web app uses **SASS** for style, animations and handling responsivity and **JQuery** mainly for AJAX services.
 
-##Develpment
+# Develpment
 You can set up a copy of the development environment using gulp.
 
 1- Install [NPM](https://nodejs.org/en/download/).
@@ -23,10 +23,10 @@ $ gulp
 $ npm gulp serve
 ```
 
-##Get distributable version : 
+# Get distributable version : 
 copy `/app` directory to your server.
 
-##Dependencies 
+# Dependencies 
 This project is using the services of [chucknorris.io](api.chucknorris.io).
 Art extracted with modification from [here](https://www.pinterest.com/pin/449726712760502369/).
 
